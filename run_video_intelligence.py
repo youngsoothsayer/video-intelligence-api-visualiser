@@ -3,8 +3,8 @@ from google.cloud import videointelligence
 
 import time
 
-gcs_uri = "gs://YOUR-BUCKET/YOURVIDEO.mp4"
-output_uri = "gs://YOUR-BUCKET/output - {}.json".format(time.time())
+gcs_uri = "gs://dugmlobjectracking/DUG_MOVIE_v27_10.15_MVE_CUT.mp4"
+output_uri = "gs://dugmlobjectracking/output - {}.json".format(time.time())
 
 video_client = videointelligence.VideoIntelligenceServiceClient.from_service_account_file(
     "YOUR SERVICE ACCOUNT FILE.json")
